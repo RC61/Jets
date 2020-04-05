@@ -141,43 +141,18 @@ public class AirField {
 	}
 	
 	public void removeJet() {
-		int i = 0;
-		for (Jet jet : jets) {
-			if (jet != (null)) {
-				System.out.println(i +": "+ jet);
-				i ++;
-			}
-		}
-		System.out.println("Choose a craft to remove:");
-		int remove = kb.nextInt();
-		
-		switch(remove) {
-		case 0:
-			jets.remove(0);
-			break;
-		case 1:
-			jets.remove(1);
-			break;
-		case 2:
-			jets.remove(2);
-			break;
-		case 3:
-			jets.remove(3);
-			break;
-		case 4:
-			jets.remove(4);
-			break;
-		default:
-			System.out.println("Thats not right");
-		}
-		
-		for (Jet jet : jets) {
-			if (jet != (null)) {
-				System.out.println(i +": "+ jet);
-				i ++;
-			}
-		}
-		
-	}
+	       
+        int counter = -1;
+        for (Jet jet : jets) {
+            counter++;
+            System.out.println(counter + " " +jet);
+        } 
+            System.out.println("Choose the jet that you want to remove: ");
+            int option = kb.nextInt();
+            jets.remove(option);
+            System.out.println("!!Poof!!");
+            displayFleet();
+        
+    }
 
 }
