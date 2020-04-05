@@ -142,12 +142,14 @@ public class AirField {
 	
 	public void removeJet() {
 	       
-        int counter = -1;
+        int jetNumber = 0;
         for (Jet jet : jets) {
-            counter++;
-            System.out.println(counter + " " +jet);
+        	if (jet != (null)) {
+            System.out.println(jetNumber + ": " +jet);
+            jetNumber++;
+        	}
         } 
-            System.out.println("Choose the jet that you want to remove: ");
+            System.out.println("Choose a jet that you want to remove: ");
             int option = kb.nextInt();
             jets.remove(option);
             System.out.println("!!Poof!!");
