@@ -1,0 +1,5 @@
+A Wing, 1300, 6000, 175000, Fighter
+B Wing, 850, 6000, 220000, Bomber
+Naboo N1, 1100, 5000, 200000, Fighter
+X Wing, 1050, 4500, 150000, Fighter
+Y Wing, 1000, 8000, 135000, Bomber
