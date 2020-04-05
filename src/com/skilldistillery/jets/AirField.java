@@ -127,7 +127,7 @@ public class AirField {
 		String model = kb.next();
 		System.out.println();
 		System.out.print("");
-		System.out.print("How fast is your Space Craft: ");
+		System.out.print("How fast is your Space Craft in (MPH): ");
 		double speed = kb.nextDouble();
 		System.out.print("");
 		System.out.print("What is the range of your craft: ");

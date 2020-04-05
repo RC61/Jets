@@ -20,13 +20,10 @@ public Jet(String model, double speed, int range, long price) {
 	}
 
 public void fly() {
-	System.out.println("I'm the " + this.model);
-	System.out.println("I can fly for " + (this.range / this.speed) + " hours.");
+	System.out.println(this.model + " here.");
+	System.out.println("My model can fly for " + (this.range / this.speed) + " hours.");
 }
 
-public void getMach() {
-	System.out.println("WTF IS THIS");
-}
 
 public String getModel() {
 	return model;
@@ -62,7 +59,7 @@ public void setPrice(long price) {
 
 @Override
 public String toString() {
-	return "Jet [model=" + model + ", speed=" + speed + ", range=" + range + ", price=" + price + "]";
+	return "Jet [model=" + model + ", speed=" + speed + " MPH" + ", range=" + range + " miles" +", price=" + price + " Credits" + "]";
 }
 
 public void displayJet() {
