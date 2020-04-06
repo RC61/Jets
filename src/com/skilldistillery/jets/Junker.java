@@ -1,5 +1,7 @@
 package com.skilldistillery.jets;
 
+//Junker is my Jetimpl
+
 public class Junker extends Jet{
 
 	public Junker() {
